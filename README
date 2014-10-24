@@ -10,7 +10,7 @@ library(limma)
 # set up working directories
 setwd("path_to_data")
 # create a directory called "raw" in "path_to_data"
-# put your raw .gar files there
+# put your raw .gpr files there
 target_path <- "./data/targets.txt"
 load("./data/annotation.RData")
 load("./data/features.RData")

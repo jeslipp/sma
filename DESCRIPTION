@@ -1,0 +1,15 @@
+Package: sma
+Title: Tools for Analysis of Splicing Microarray
+Version: 0.1
+Authors@R: "Jesse Lipp <jesse.lipp@ucsf.edu> [aut, cre]"
+Description: Statistical analysis and modeling of splicing microarray data
+Depends:
+    R (>= 3.1.0)
+Imports:
+    limma,
+    impute,
+    dplyr,
+    GenomicFeatures,
+    broom
+License: What license is it under?
+LazyData: true

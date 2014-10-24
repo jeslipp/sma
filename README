@@ -1,0 +1,23 @@
+Tools for analysis of Schizosaccharomyces splicing microarray
+
+Example workflow
+
+# import libraries
+library(sma)
+library(GenomicFeatures)
+library(limma)
+
+# set up working directories
+setwd("path_to_data")
+target_path <- "./data/targets.txt"
+load("./data/annotation.RData")
+load("./data/features.RData")
+
+# load and normalize data
+e <- sma.load(target_path)
+
+# analyze data using the E*I/J score
+results <- sma.analyze(e)
+
+# model intron features based on microarray classification
+models <- sma.model(results$stats, features)
